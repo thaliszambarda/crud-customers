@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import "@engie-group/fluid-design-system-react/css";
+
+@theme {
+  --font-lato: "Lato", "serif";
+
+  --color-primary: #9eadb8;
+  --color-secondary: #007acd;
+  --color-label: #334551;
+  --color-input: #171d21;
+  --color-red: #db3735;
+  --color-icon: #60798b;
+  --color-gray: #052b5014;
+  --color-warning: #ff8c47;
+  --color-header: #ccd4da;
+  --color-contrast: #435c6e;
+  --color-brand: #005aa0;
+  --color-tertiary: #0f55e11a;
+}
+
+.nj-form-item.nj-form-item--select.nj-form-item--multi-select {
+  @apply !size-full !pt-0;
+}
+
+.nj-form-item__field-wrapper {
+  @apply !h-[38px] !min-h-[38px] cursor-pointer hover:bg-white;
+}
+
+* {
+  @apply font-lato;
+}
+
+.react-select__control {
+  @apply border-gray-300 focus:ring-2 focus:ring-blue-500;
+}
+
+.react-select__value-container {
+  @apply p-1;
+}
+
+.react-select__menu {
+  @apply z-50;
+}
