@@ -17,7 +17,7 @@ import { api } from "@/utils/axios";
 
 interface ExecutiveOption {
   value: string;
-  name: string;
+  label: string;
 }
 
 type MappedCustomerData = Omit<ICustomersData, "id" | "status"> & {

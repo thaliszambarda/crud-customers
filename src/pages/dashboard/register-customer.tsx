@@ -56,7 +56,7 @@ export const RegisterCustomer = () => {
   const form = useForm<z.infer<typeof CustomerFormSchema>>({
     resolver: zodResolver(CustomerFormSchema),
     defaultValues: {
-      status: { value: "Ativo", name: "Ativo" },
+      status: { value: "Ativo", label: "Ativo" },
     },
   });
 
@@ -73,7 +73,7 @@ export const RegisterCustomer = () => {
         description: "Cadastre quantos clientes quiser.",
       });
       form.reset({
-        status: { value: "Ativo", name: "Ativo" },
+        status: { value: "Ativo", label: "Ativo" },
         executive: undefined,
         multiSite: undefined,
         type: undefined,

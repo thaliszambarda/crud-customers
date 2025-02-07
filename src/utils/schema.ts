@@ -8,7 +8,7 @@ export const CustomerFormSchema = z.object({
   status: z
     .object({
       value: z.string(),
-      name: z.string(),
+      label: z.string(),
     })
     .optional(),
   corporateReason: z
@@ -22,21 +22,21 @@ export const CustomerFormSchema = z.object({
   executive: z.object(
     {
       value: z.string(),
-      name: z.string(),
+      label: z.string(),
     },
     { required_error: "Selecione um executivo" }
   ),
   multiSite: z.object(
     {
       value: z.string(),
-      name: z.string(),
+      label: z.string(),
     },
     { required_error: "Selecione um tipo" }
   ),
   type: z.object(
     {
       value: z.string(),
-      name: z.string(),
+      label: z.string(),
     },
     { required_error: "Selecione um tipo" }
   ),
@@ -46,14 +46,14 @@ export const CustomerFormSchema = z.object({
   state: z.object(
     {
       value: z.string(),
-      name: z.string(),
+      label: z.string(),
     },
     { required_error: "Selecione um estado" }
   ),
   city: z.object(
     {
       value: z.string(),
-      name: z.string(),
+      label: z.string(),
     },
     { required_error: "Selecione uma cidade" }
   ),

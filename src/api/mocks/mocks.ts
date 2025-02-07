@@ -1,35 +1,35 @@
 export const statusOptions = [
-  { value: "Ativo", name: "Ativo" },
-  { value: "Inativo", name: "Inativo" },
+  { value: "Ativo", label: "Ativo" },
+  { value: "Inativo", label: "Inativo" },
 ];
 
 export const executiveOptions = [
-  { value: "Eder Bispo de Oliveira", name: "Eder Bispo de Oliveira" },
-  { value: "Marcos Silva", name: "Marcos Silva" },
+  { value: "Eder Bispo de Oliveira", label: "Eder Bispo de Oliveira" },
+  { value: "Marcos Silva", label: "Marcos Silva" },
 ];
 
 export const multiSiteOptions = [
-  { value: "Sim", name: "Sim" },
-  { value: "Não", name: "Nao" },
+  { value: "Sim", label: "Sim" },
+  { value: "Não", label: "Nao" },
 ];
 
 export const typeOptions = [
-  { value: "Atacadista", name: "Atacadista" },
-  { value: "Varejo", name: "Varejo" },
+  { value: "Atacadista", label: "Atacadista" },
+  { value: "Varejo", label: "Varejo" },
 ];
 
 export const stateOptions = [
-  { value: "SP", name: "São Paulo" },
-  { value: "RJ", name: "Rio de Janeiro" },
-  { value: "MG", name: "Minas Gerais" },
-  { value: "ES", name: "Espírito Santo" },
+  { value: "SP", label: "São Paulo" },
+  { value: "RJ", label: "Rio de Janeiro" },
+  { value: "MG", label: "Minas Gerais" },
+  { value: "ES", label: "Espírito Santo" },
   // Adicione outros estados conforme necessário
 ];
 
 export const cityOptions = [
-  { value: "São Paulo", name: "São Paulo" },
-  { value: "Rio de Janeiro", name: "Rio de Janeiro" },
-  { value: "Belo Horizonte", name: "Belo Horizonte" },
-  { value: "Vitória", name: "Vitória" },
+  { value: "São Paulo", label: "São Paulo" },
+  { value: "Rio de Janeiro", label: "Rio de Janeiro" },
+  { value: "Belo Horizonte", label: "Belo Horizonte" },
+  { value: "Vitória", label: "Vitória" },
   // Adicione mais cidades conforme necessário
 ];

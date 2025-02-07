@@ -55,14 +55,14 @@ export function DataTablePagination<TData>({
       {/* Itens por página */}
       <div className="flex items-center space-x-4">
         <BaseSelect
-          value={{ value: String(pageSize), name: String(pageSize) }}
+          value={{ value: String(pageSize), label: String(pageSize) }}
           onChange={(selectedOption) => {
             table.setPageSize(Number(selectedOption?.value));
           }}
           options={[
-            { value: "10", name: "10" },
-            { value: "20", name: "20" },
-            { value: "50", name: "50" },
+            { value: "10", label: "10" },
+            { value: "20", label: "20" },
+            { value: "50", label: "50" },
           ]}
         />
         <p className="text-label text-sm font-normal">Itens por página</p>

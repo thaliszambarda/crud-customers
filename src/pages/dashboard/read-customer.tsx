@@ -22,7 +22,6 @@ import { api } from "@/utils/axios";
 import { CustomerFormSchema } from "@/utils/schema";
 
 export const ReadCustomer = () => {
-  //const navigate = useNavigate();
   const { id } = useParams();
 
   const fetchCustomers = async () => {
@@ -34,11 +33,6 @@ export const ReadCustomer = () => {
     queryKey: ["customer", id],
     queryFn: fetchCustomers,
   });
-
-  /* const handleNavigateClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    navigate("/clientes");
-  }; */
 
   const form = useForm<z.infer<typeof CustomerFormSchema>>({
     resolver: zodResolver(CustomerFormSchema),

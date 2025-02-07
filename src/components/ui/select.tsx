@@ -8,7 +8,7 @@ import { getCustomStyles } from "./select-styles";
 
 export interface OptionType {
   value: string;
-  name: string;
+  label: string;
 }
 
 export type SelectProps = Props<OptionType, false, GroupBase<OptionType>> & {
@@ -20,6 +20,7 @@ export const BaseSelect = forwardRef<SelectInstance<OptionType>, SelectProps>(
     <div className="flex flex-col gap-1">
       <Select<OptionType>
         ref={ref}
+        options={props.options}
         styles={getCustomStyles()}
         value={value}
         className={cn(

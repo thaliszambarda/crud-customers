@@ -24,8 +24,8 @@ export const FloatingSelect = forwardRef<
     const [searchTerm, setSearchTerm] = useState("");
     const [hasFocus, setHasFocus] = useState(false);
 
-    const formatOptionLabel = ({ name }: OptionType) => {
-      if (!searchTerm) return <>{name}</>;
+    const formatOptionLabel = ({ label }: OptionType) => {
+      if (!searchTerm) return <>{label}</>;
 
       const regex = new RegExp(`(${escapeRegExp(searchTerm)})`, "gi");
       return label.split(regex).map((part, index) =>
