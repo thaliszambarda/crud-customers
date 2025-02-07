@@ -35,7 +35,7 @@ O desafio consiste em desenvolver o front-end de um crud de clientes:
 
 - [Remote repository](https://github.com/thaliszambarda/crud-customers)
 
-- [Live preview](https://crud-customers-thaliszambarda.vercel.app)
+- [Live preview](https://crud-customers.vercel.app)
 
 ### Getting started
 
